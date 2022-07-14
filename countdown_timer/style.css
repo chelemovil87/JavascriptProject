@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./hombre-saltando-alegria-lago_53876-40.webp);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    font-size: 4rem;
+    margin-top: -20rem;
+}
+.countdown-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+
+}
+countdown-el span{
+    font-size: 1.5rem;
+}
+
+.btn-date{
+    margin-bottom: -10rem;
+    border-radius: 73px;
+    background: #2E8688;
+    box-shadow: -20px 20px 60px #184647,
+             20px -20px 60px #44c6c9;
+}
+
+    
