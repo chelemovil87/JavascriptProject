@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <button class="btn-date" id="select">Select Date</button>
-    <h1 class="title">Vacation Countdown</h1>
-    <div class="countdown-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <section class="container">
+            <h1 class="title">Vacation Countdown</h1>
+            <div class="countdown-container">
         <div class="countdown-el days-c">
             <p class="big-text" id="days">0</p>
             <span>Days</span>
@@ -29,6 +29,14 @@
             <span>Seconds</span>
         </div>
     </div>
+    </section>
+    <section>
+        <form action="" id="form">
+            <button type="button" onclick="vacations"> Select Date!</button>
+            
+        </form>
+    </section> 
+    
 </body>
 <script src="script.js"></script>
 </html>

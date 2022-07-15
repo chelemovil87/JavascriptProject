@@ -1,33 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+:root {
+    --black: #000000;
+    --purple: #7026f4;
+    --green: #3cff64;
+    --white: #ffffff;
+    --yellow: #fff70b;
+}
 
 *{
     box-sizing: border-box;
+    
 }
 body {
-    background-image: url(./hombre-saltando-alegria-lago_53876-40.webp);
-    background-size: cover;
+    background-image: url(https://img.freepik.com/fotos-premium/pueblo-mandrakia-isla-milos-grecia_163782-8094.jpg?w=1380);
+    background-size: cover ;
+    opacity: 0.7;
     min-height: 100vh;
+    min-width: 100vw;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
 }
+.container {
+    background-image: linear-gradient(260deg, var(--yellow), var(--green));
+    white-space: pre-wrap;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 h1 {
-    font-size: 4rem;
-    margin-top: -20rem;
+    font-size: 5em;
+    text-align: center;
 }
 .countdown-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
+    text-align: center;
 }
 
 .big-text {
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 9rem;
     line-height: 1;
     margin: 0 2rem;
 }
@@ -36,16 +53,43 @@ h1 {
     text-align: center;
 
 }
-countdown-el span{
-    font-size: 1.5rem;
+span{
+    font-size: 2rem;
 }
 
-.btn-date{
-    margin-bottom: -10rem;
-    border-radius: 73px;
-    background: #2E8688;
-    box-shadow: -20px 20px 60px #184647,
-             20px -20px 60px #44c6c9;
+.select-date {
+    background-color: black;
 }
 
-    
+button {
+    width: 15em;
+    height: 5em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+    background-image: linear-gradient(to right, var(--green) 0%, var(--yellow) 100%);
+} 
+
+button::before{ 
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left,var(--green) 0%, var(--yellow) 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}
