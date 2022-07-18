@@ -27,7 +27,7 @@ body {
     
 }
 .container {
-     max-width: 100%;
+    max-width: 100%;
     background-image: linear-gradient(260deg, var(--yellow), var(--green));
     white-space: pre-wrap;
     -webkit-background-clip: text;
@@ -101,4 +101,23 @@ span{
 
 .button:hover::before {
     width:0.1em;
+}
+
+.btn{
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        font-size: 1.5em;
+        padding: 0;
+        text-align: center;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1em;
+        z-index: 1;
+        box-shadow: 6px 6px 12px var(--grey),
+            -6px -6px 12px var(--white);
+        background-image: linear-gradient(to right, var(--green) 0%, var(--yellow) 100%);
+
 }
