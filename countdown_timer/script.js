@@ -3,8 +3,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const vacations = ("29 July 2022");
-
+const vacations = ();
 function countdown() {
   const vacationsDate = new Date(vacations);
   const currenDate = new Date();
@@ -30,3 +29,16 @@ function formatTime(time) {
 countdown();
 
 setInterval(countdown, 1000);
+
+
+window.addEventListener("load", function () {
+  document.getElementById("vacations").type = "text";
+
+  document.getElementById("vacations").addEventListener("blur", function () {
+    document.getElementById("vacations").type = "text";
+  });
+
+  document.getElementById("vacations").addEventListener("focus", function () {
+    document.getElementById("vacations").type = "date";
+  });
+});

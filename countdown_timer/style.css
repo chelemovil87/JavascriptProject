@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 :root {
-    --black: #000000;
-    --purple: #7026f4;
     --green: #3cff64;
-    --white: #ffffff;
     --yellow: #fff70b;
+    --grey: #c5c5c5;
+    --white:#ffffff;
+    --black:#000000;
+    
 }
 
 *{
@@ -16,7 +17,7 @@ body {
     background-size: cover ;
     opacity: 0.7;
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -26,27 +27,30 @@ body {
     
 }
 .container {
+     max-width: 100%;
     background-image: linear-gradient(260deg, var(--yellow), var(--green));
     white-space: pre-wrap;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
     text-align: center;
 }
 .countdown-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.5rem;
     text-align: center;
 }
 
 .big-text {
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 5rem;
     line-height: 1;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .countdown-el {
@@ -57,39 +61,44 @@ span{
     font-size: 2rem;
 }
 
-.select-date {
-    background-color: black;
-}
-
-button {
+.button {
+    
     width: 15em;
     height: 5em;
     border-radius: 30em;
-    font-size: 15px;
+    font-size: 1.5em;
+    padding: 0;
+    text-align: center;
     font-family: inherit;
     border: none;
     position: relative;
     overflow: hidden;
+    margin-bottom: 1em;
     z-index: 1;
-    box-shadow: 6px 6px 12px #c5c5c5,
-    -6px -6px 12px #ffffff;
+    box-shadow: 6px 6px 12px var(--grey),
+    -6px -6px 12px var(--white);
     background-image: linear-gradient(to right, var(--green) 0%, var(--yellow) 100%);
 } 
+.button::placeholder {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+}
 
-button::before{ 
+.button::before{ 
     content: '';
-    width: 0;
-    height: 3em;
+    width: 15em;
+    height: 5em;
     border-radius: 30em;
     position: absolute;
     top: 0;
     left: 0;
     background-image: linear-gradient(to left,var(--green) 0%, var(--yellow) 100%);
-    transition: .5s ease;
+    transition: 1s ease;
     display: block;
     z-index: -1;
 }
 
-button:hover::before {
-    width: 9em;
+.button:hover::before {
+    width:0.1em;
 }
