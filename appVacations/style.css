@@ -1,3 +1,7 @@
+--root{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
 .card {
  width: 190px;
  height: 254px;
@@ -9,7 +13,7 @@
 
 .card:hover {
  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
- background-color: #4bb8ff;
+background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .card .blob {
@@ -17,7 +21,7 @@
  width: 75%;
  border-radius: 0 0 30px 30px;
  margin: 0 auto;
- background-color: #4bb8ff;
+background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
  visibility: visible;
  transition: all 0.3s;
 }
@@ -31,7 +35,6 @@
  margin: 30px auto 10px auto;
  width: 70px;
  height: 70px;
- background-color: #4bb8ff;
  border-radius: 50%;
  font-size: 11px;
  justify-content: center;
@@ -45,7 +48,7 @@
  border-radius: 10px 0 0;
  margin: 0 auto;
  background-color: #f0f0f0;
- z-index: 99999;
+ z-index: 2;
 }
 
 .card h2 {
